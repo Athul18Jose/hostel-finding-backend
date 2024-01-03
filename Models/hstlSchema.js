@@ -1,0 +1,87 @@
+const mongoose = require('mongoose')
+
+const hstlSchema = new mongoose.Schema({
+    owner:{
+        type:String,
+        required:true
+    },
+    phn:{
+        type:Number,
+        required:true
+    },
+    hstlname:{
+        type:String,
+        required:true
+    },
+    minRent:{
+        type:Number,
+        required:true
+    },
+    category:{
+        type:String,
+        required:true
+    },
+    desc:{
+        type:String,
+        required:true
+    },
+    address:{
+        type:String,
+        required:true
+    },
+    If:{
+        type:Number,
+        required:true
+    },
+    Iwf:{
+        type:Number,
+        required:true
+    },
+    IIf:{
+        type:Number,
+        required:true
+    },
+    IIwf:{
+        type:Number,
+        required:true
+     },
+    IVf:{
+        type:Number,
+        required:true
+     },
+    IVwf:{
+        type:Number,
+        required:true
+     },
+    Vf:{
+        type:Number,
+        required:true
+     },
+    Vwf:{
+        type:Number,
+        required:true
+    },
+    img1:{
+        type:String,
+        required:true
+    },
+    img2:{
+        type:String,
+        required:true
+    },
+    img3:{
+        type:String,
+        required:true
+    },
+    img4:{
+        type:String,
+        required:true
+    },
+    img5:{
+        type:String,
+        required:true
+    }
+})
+
+const hstls = mongoose.model('hstls',hstlSchema)
+module.exports = hstls
